@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
+    <title>Timetable</title>
+  </head>
+
+  <body>
+    <h1>จัดตารางเรียน</h1>
+
+    <section id="info">
+      <h2>
+        ชื่อนิสิต <input id="name"  type="text"  />
+        <input class="add-btn" type="button" value="Add" id = "addnisit" />
+      </h2>
+      <h2>
+        เลือกนิสิตที่ต้องการจัดตารางสอน
+      <div id = "nisitpog">
+        <select id="choosenisit"> 
+          <option value="">--เลือกนิสิต--</option>
+        </select>
+      </div> 
+      </h2>
+
+      <span>
+        กรอกรายวิชาที่ต้องการเพิ่ม <input id="subject" type="text"
+      /></span>
+      <span id="day">
+        วัน
+        <select id="chooseday">
+          <option value="">--เลือกวัน--</option>
+
+          <option value="0">จันทร์</option>
+          <option value="1">อังคาร</option>
+          <option value="2">พุธ</option>
+          <option value="3">พฤหัส</option>
+          <option value="4">ศุกร์</option>
+        </select>
+      </span>
+      <span id="start">
+        เวลาเริ่ม
+        <select name="" id="starttime">
+          <option value="0">08:00</option>
+          <option value="1">08:30</option>
+          <option value="2">09:00</option>
+          <option value="3">09:30</option>
+          <option value="4">10:00</option>
+          <option value="5">10:30</option>
+          <option value="6">11:00</option>
+          <option value="7">11:30</option>
+          <option value="8">12:00</option>
+          <option value="9">12:30</option>
+          <option value="10">13:00</option>
+          <option value="11">13:30</option>
+          <option value="12">14:00</option>
+          <option value="13">14:30</option>
+          <option value="14">15:00</option>
+          <option value="15">15:30</option>
+        </select>
+      </span>
+
+      <span id="end">
+        เวลาจบ
+        <select name="" id="endtime">
+          <option value="1">08:30</option>
+          <option value="2">09:00</option>
+          <option value="3">09:30</option>
+          <option value="4">10:00</option>
+          <option value="5">10:30</option>
+          <option value="6">11:00</option>
+          <option value="7">11:30</option>
+          <option value="8">12:00</option>
+          <option value="9">12:30</option>
+          <option value="10">13:00</option>
+          <option value="11">13:30</option>
+          <option value="12">14:00</option>
+          <option value="13">14:30</option>
+          <option value="14">15:00</option>
+          <option value="15">15:30</option>
+          <option value="16">16:00</option>
+        </select>
+      </span>
+      <input class="add-btn" type="button" value="Add" id = "add"/>
+
+    </section>
+
+    <div class="table-wrapper">
+      <table>
+        <tr class="table-h">
+          <td>เวลา</td>
+          <td>8</td>
+          <td></td>
+          <td>9</td>
+          <td></td>
+          <td>10</td>
+          <td></td>
+          <td>11</td>
+          <td></td>
+          <td>12</td>
+          <td></td>
+          <td>13</td>
+          <td></td>
+          <td>14</td>
+          <td></td>
+          <td>15</td>
+          <td></td>
+          <td>16</td>
+        </tr>
+        <tr id="tbl-mon">
+          <td class="table-h">จันทร์</td>
+        </tr>
+        <tr id="tbl-tue">
+          <td class="table-h">อังคาร</td>
+        </tr>
+        <tr id="tbl-wed">
+          <td class="table-h">พุธ</td>
+        </tr >
+        <tr id="tbl-thu">
+          <td class="table-h">พฤหัส</td>
+        </tr >
+        <tr id="tbl-fri">
+          <td class="table-h">ศุกร์</td>
+        </tr>
+      </table>
+    </div>
+
+   
+    
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+

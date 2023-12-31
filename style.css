@@ -1,0 +1,141 @@
+body {
+  font-family: "Sriracha", sans-serif;
+  background-color: #bee6f1;
+  /* background-color: #caf0f8; */
+  font-size: 1rem;
+  padding: 1rem;
+  color: #0f404e;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 900;
+}
+h2 {
+  font-weight: 600;
+}
+h3 {
+  font-weight: 500;
+}
+
+#info {
+  /* margin-left: 8rem; */
+  margin-left: 5%;
+  margin-bottom: 1rem;
+}
+#name {
+  padding: 0.1rem 0.5rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  border-radius: 8px;
+}
+#choose-nisit {
+  padding: 0.2rem 0.5rem;
+  border-radius: 8px;
+}
+
+#subject,
+#choose-day {
+  padding: 0.1rem 0.5rem;
+  margin-left: 0.5rem;
+  margin-right: 2rem;
+  border-radius: 8px;
+}
+
+#subject {
+  width: 6rem;
+}
+
+input[type="time"] {
+  border-radius: 8px;
+  margin-left: 0.5rem;
+  margin-right: 2rem;
+}
+
+#duration {
+  padding: 0.1rem 0.5rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  border-radius: 8px;
+  width: 3rem;
+}
+
+.add-btn {
+  padding: 0.1rem 0.8rem;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.add-btn:hover {
+  /* background-color: #eea897; */
+  background-color: #7eeac9;
+  color: white;
+}
+
+table {
+  background-color: #7ed5ea;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  border-collapse: collapse;
+  overflow: hidden;
+}
+
+td {
+  width: 5%;
+  height: 4rem;
+  /* background-color: #eea897; */
+  background-color: #7ed5ea;
+  text-align: center;
+}
+
+#cal {
+  width: 5%;
+  height: 4rem;
+  /* background-color: #eea897; */
+  background-color: #f8ad9a;
+  text-align: center;
+  border: 1px solid #e7836b;
+  color: #85321e;
+}
+
+.table-h > td,
+.table-h {
+  background-color: #4b9fe1;
+  color: white;
+  border: none;
+}
+
+.table-h > td {
+  border-left: 1px solid #178ae1;
+}
+
+.table-wrapper {
+  overflow-x: scroll;
+}
+
+@media (max-width: 1250px) {
+  #duration-with-add {
+    display: block;
+  }
+}
+
+@media (max-width: 1000px) {
+  #end {
+    display: block;
+  }
+}
+
+@media (max-width: 800px) {
+  #start {
+    display: block;
+  }
+}
+
+@media (max-width: 580px) {
+  #day {
+    display: block;
+  }
+}
